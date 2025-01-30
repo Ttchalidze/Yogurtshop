@@ -1,6 +1,7 @@
 function Flavor() {
   let input = prompt("Enter Name");
   if (input) {
+    let array = input.split(",").map((flavor) => flavor.trim().toLowerCase());
     let Count = {};
 
     array.forEach((flavor) => {
